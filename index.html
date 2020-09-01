@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Alex Patterson | CV Request Form | Year 1</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="Author" content="Alex Patterson">
+    <meta name="Description" content="Web Form">
+    <meta name="Keywords" content="COM109, CV request, form, resume">
+    <link id="style" rel="stylesheet" type="text/css" href="css/webform.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1 id="heading">Fill In This Form To Recieve A Copy of My CV</h1>
+    </header>
+
+    <!--navigation bar-->
+    <ul>
+        <li><a class="active" id="home" href="">Home</a></li>
+        <li><a id="interests" href="">My Interests</a></li>
+        <li><a id="allEle" href="">All Elements</a></li>
+        <li><a id="allEle2" href="">All Elements 2</a></li>
+        <li><a id="imgMap" href="">Image Map</a></li>
+        <li><a id="temp" href="">Temperature</a></li>
+		<li><a id="features" href="">Key Features</a></li>
+        <li style="float:right"><a id="lang" onclick="toggleLang()">日本語/Japanese</a></li>
+    </ul>
+
+    <form id="myForm" action="" method="post">
+        <input title="enter email" type="text" id="email" name="emailid" placeholder="Email Address" maxlength="50" required><span class="error" id="err_email">*Enter a valid email address</span>
+        <input title="enter fullname" type="text" id="person_name" name="name" placeholder="Full Name" maxlength="50" required><span class="error" id="err_name">*Enter valid name with A-Z characters only</span>
+        <input title="enter company name" type="text" id="company_name" name="company" placeholder="Company Name" maxlength="50" required>
+        <br/>
+        <textarea id="usercomment" name="usercomment" placeholder="Please leave a comment on why you would like to see my CV" rows="6" cols="50"></textarea>
+        <br>
+        <label tabindex="0" class="cv_type">
+            <input type="radio" title="short" id="CV_no_1" name="cvChoice" value="short" checked="checked"><span class="checkmark"></span></label><span id="short">Short CV</span>
+        <br>
+        <br>
+        <label tabindex="0" title="long" class="cv_type">
+            <input type="radio" id="CV_no_2" name="cvChoice" value="long"><span class="checkmark"></span></label><span id="long">Long CV</span><span class="error" id="err_fields"><br><br>*Please fill out all fields before submitting</span>
+        <br>
+        <br>
+        <input tabindex="0" title="submit form" id="submit_form" type="submit" name="request_CV" value="Request CV" formnovalidate>
+    </form>
+
+    <!--darkMode toggle button-->
+    <a href="#" onclick="toggleDarkMode()" class="float"><i class="fa fa-moon-o my-float"></i></a>
+
+    <div class="cookie_container">
+        <span id="cookieMsg">By clicking "I Agree", you allow us store your language and dark mode preferences.</span>
+        <button class="cookie_btn" id="cookiesAgree">I Agree</button>
+    </div>
+
+    <script src="scripts/form.js"></script>
+    <script src="scripts/cookies.js"></script>
+    <script src="scripts/darkMode.js"></script>
+    <script src="scripts/langSwitcher.js"></script>
+</body>
+
+</html>

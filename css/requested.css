@@ -1,0 +1,62 @@
+@charset "charset";
+ @import url("//fonts.googleapis.com/css?family=Open+Sans&display=swap");
+ body {
+     background-color: #FFFFFF;
+     font-family: 'Open Sans', Helvetica, sans-serif, Arial;
+     margin: 0px;
+}
+ header {
+     padding: 1%;
+     background-color: #6DAFFE;
+     outline: #6DAFFE solid 0.5em;
+}
+ h1 {
+     color: #FFFFFF;
+     text-align: center;
+     text-transform: capitalize;
+     font-size: 250%;
+}
+ ul {
+     list-style-type: none;
+     padding: 0;
+     overflow: hidden;
+     background-color: #437FC7;
+}
+ li {
+     float: left;
+}
+ li a {
+     display: block;
+     color: #FFFFFF;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+}
+ li a:hover {
+     background-color: #2D5383;
+}
+ #error{
+     color : red;
+}
+ #requests {
+     border-collapse: collapse;
+     width: 70%;
+     margin: 0 auto;
+}
+ #requests td, #requests th {
+     border: 1px solid #ddd;
+     padding: 8px;
+}
+ #requests tr:nth-child(even){
+     background-color: #f2f2f2;
+}
+ #requests tr:hover {
+     background-color: #ddd;
+}
+ #requests th {
+     padding-top: 12px;
+     padding-bottom: 12px;
+     text-align: left;
+     background-color: #437FC7;
+     color: white;
+}
